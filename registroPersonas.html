@@ -58,25 +58,25 @@
                     <li>
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">Registros<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href = "" >Cerveza</a></li>
-                            <li><a href = "">Persona</a></li>
-                            <li><a href = "">Otros</a></li>
+                            <li><a href = "registroCervezas.html" >Cerveza</a></li>
+                            <li><a href = "registroPersonas.html">Persona</a></li>
+                            <li><a href = "registroOtros.html">Otros</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">Modificaciones<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href = "">Cerveza</a></li>
-                            <li><a href = "">Persona</a></li>
-                            <li><a href = "">Otros</a></li>
+                            <li><a href = "modificarCervezas.html">Cerveza</a></li>
+                            <li><a href = "modificarPersonas.html">Persona</a></li>
+                            <li><a href = "modificarOtros.html">Otros</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="" href="" class="dropdown-toggle" data-toggle="dropdown">Consultas<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href = "">Cerveza</a></li>
-                            <li><a href = "">Comprador</a></li>
-                            <li><a href = "">Estadísticas</a></li>
+                            <li><a href = "ConsultarCerveza.html">Cerveza</a></li>
+                            <li><a href = "ConsultarComprador.html">Comprador</a></li>
+                            <li><a href = "Estadisticas.html">Estadísticas</a></li>
                         </ul>
                     </li>
                     <li>
@@ -108,36 +108,93 @@
                         <hr>
                         <form role="form">
                             <div class="row">
+                                <div class="col-lg-12">
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">Empleado</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">Comprador</label>
+                                </div>
+                                
                                 <div class="form-group col-lg-4">
                                     <label>Nombre</label>
                                     <input type="text" class="form-control">
                                 </div>
+                                
                                 <div class="form-group col-lg-4">
                                     <label>Primer Apellido</label>
                                     <input type="email" class="form-control">
                                 </div>
+                                
                                 <div class="form-group col-lg-4">
                                     <label>Segundo Apellido</label>
                                     <input type="tel" class="form-control">
                                 </div>
+                                
                                  <div class="form-group col-lg-4">
                                     <label>Cédula</label>
                                     <input type="tel" class="form-control">
                                 </div>
+                                
                                  <div class="form-group col-lg-4">
                                     <label>Correo</label>
                                     <input type="tel" class="form-control">
                                 </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Pais</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Pais
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Provincia</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Provincia
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Cantón</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Cantón
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Distrito</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Distrito
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
+                                
                                  <div class="form-group col-lg-4">
                                     <label>Dirección exacta</label>
                                     <input type="tel" class="form-control">
                                 </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Carnet (Empleado):</label>
+                                    <input type="tel" id="carnet" class="form-control">
+                                </div>
+                                 
+                                 <div class="form-group col-lg-4">
+                                    <label>Pseudónimo (Comprador):</label>
+                                    <input type="tel" id="pseudonimo" class="form-control">
+                                </div>
+                                
                                 <div class="form-group col-lg-4">
                                     <label>Fotografía</label>
                                     <span class="btn btn-default btn-file">
                                         <input type="file">
                                     </span>
                                 </div>
+                                
                                 <div class="clearfix"></div>
                                 
                                 <div class="form-group col-lg-12">
@@ -148,33 +205,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-2.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-3.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
