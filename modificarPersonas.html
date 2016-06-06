@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Registro cervezas - Maison de la Bière</title>
+    <title>Modificar Peersonas - Maison de la Bière</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -68,14 +68,14 @@
                         <ul class="dropdown-menu">
                             <li><a href = "modificarCervezas.html">Cerveza</a></li>
                             <li><a href = "modificarPersonas.html">Persona</a></li>
-                            <li><a href = "modificarOtros.html">Otros</a></li>
+                            <li><a href = "">Otros</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="" href="" class="dropdown-toggle" data-toggle="dropdown">Consultas<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href = "ConsultarCerveza.html">Cerveza</a></li>
-                            <li><a href = "ConsultarComprador.html">Comprador</a></li>
+                            <li><a href = "consultarCerveza.html">Cerveza</a></li>
+                            <li><a href = "consultarComprador.html">Comprador</a></li>
                             <li><a href = "Estadisticas.html">Estadísticas</a></li>
                         </ul>
                     </li>
@@ -95,82 +95,121 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center"><strong>Registro Cervezas</strong>
+                    <h2 class="intro-text text-center">Modificar
+                        <strong>Personas</strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <hr>
-                        <h1 class="intro-text text-center"><strong>Ingrese los datos de la Cerveza</strong>
-                        </h1>
-                        <hr>
                         <form role="form">
                             <div class="row">
+                                <div class="col-lg-12">
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">Empleado</label>
+                                </div>
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">Comprador</label>
+                                </div>
+                            </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Persona</label>
+                                  <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Persona
+                                  <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                  </ul>
+                                </div>
+                                
+                                
                                 <div class="form-group col-lg-4">
                                     <label>Nombre</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <label>Características</label>
+                                    <label>Primer Apellido</label>
                                     <input type="email" class="form-control">
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <label>Precio</label>
+                                    <label>Segundo Apellido</label>
                                     <input type="tel" class="form-control">
                                 </div>
                                  <div class="form-group col-lg-4">
-                                    <label>Porcentaje de alcohol</label>
+                                    <label>Cédula</label>
                                     <input type="tel" class="form-control">
                                 </div>
                                  <div class="form-group col-lg-4">
-                                    <label>Amargor</label>
+                                    <label>Correo</label>
                                     <input type="tel" class="form-control">
                                 </div>
-                                 <div class="form-group col-lg-4">
-                                    <label>Temperatura</label>
-                                    <input type="tel" class="form-control">
-                                </div>
+                                 
+                                
                                 <div class="form-group col-lg-4">
-                                    <label>Tiempo de fermentación</label>
-                                    <input type="tel" class="form-control">
-                                </div>
-                                 <div class="form-group col-lg-4">
-                                    <label>Tipo de Fermentación</label>
-                                  <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Tipo de Fermentación
+                                    <label>Pais</label>
+                                  <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Pais
                                   <span class="caret"></span></button>
                                   <ul class="dropdown-menu">
                                   </ul>
                                 </div>
-
+                                
                                 <div class="form-group col-lg-4">
-                                    <label>Familia</label>
-                                  <button class="btn form-control  dropdown-toggle" type="button" data-toggle="dropdown">Familia
+                                    <label>Provincia</label>
+                                  <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Provincia
                                   <span class="caret"></span></button>
                                   <ul class="dropdown-menu">
                                   </ul>
                                 </div>
-                             
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Cantón</label>
+                                  <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Cantón
+                                  <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                  </ul>
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Distrito</label>
+                                  <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Distrito
+                                  <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                  </ul>
+                                </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Dirección exacta</label>
+                                    <input type="tel" class="form-control">
+                                </div>
+                                
+                                <div class="form-group col-lg-4">
+                                    <label>Carnet (Empleado):</label>
+                                    <input type="tel" id="carnet" class="form-control">
+                                </div>
+                                 
+                                 <div class="form-group col-lg-4">
+                                    <label>Pseudónimo (Comprador):</label>
+                                    <input type="tel" id="pseudonimo" class="form-control">
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                                <div>
+                                    <span class="btn btn-default btn-file">
+                                        Browse <input type="file">
+                                    </span>
+                                </div>
                                 
                                 <div class="form-group col-lg-12">
                                     <input type="hidden" name="save" value="contact">
-                                    <button type="submit" class="btn btn-default">Registrar</button>
+                                    <button type="submit" class="btn btn-default">Guardar</button>
                                 </div>
+                                
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-12 text-center" align="center">
-                    <img class="img-responsive img-border img-full" src="img/Cerveza1.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
+                
             </div>
         </div>
+
     </div>
     <!-- /.container -->
 
