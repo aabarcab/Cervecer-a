@@ -1,0 +1,6 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ObtenerDistrito`(P_ID_CANTON INT)
+BEGIN
+	SELECT idDistrito, descripcion
+	FROM DISTRITO
+	WHERE ID_CANTON = P_ID_CANTON;
+END
