@@ -5,13 +5,12 @@ function buscarProvincia(){
  	
     if($idpais == "" ){
 
-            $("#provincia").html("<option value=''> Primero seleccione una País </option>");
+           
     }
     else{
-    	$("#provincia").html("<option value=''> Puta </option>");
     	$.ajax({
             dataType: "json",
-            data: {"pais": $idpais},
+            data: {"idPais": $idpais},
             url:   'funcionesPHP/buscarLugar.php',
             type:  'post',
             beforeSend: function(){
@@ -19,10 +18,14 @@ function buscarProvincia(){
                 },
             success: function(respuesta){
                 //lo que se si el destino devuelve algo
-                alert($idpais);
+                //var_dump(respuesta.html);
+                $("#provincia").html(respuesta.html);
+              
             },
             error:    function(xhr,err){ 
-                alert("readyState: "+ $idpais +"\nstatus: "+xhr.status+"\n \n responseText: "+xhr.responseText);
+
+
+                alert("readyState: "+ xhr.readyState +"\nstatus: "+xhr.status+"\n \n responseText: "+ xhr.responseText);
             }
         });
     };

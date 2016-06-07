@@ -1,6 +1,6 @@
 <?php
 
-	include("funcionesPHP/Connection.php");/*incluye el archivo donde esta la coneccion 
+	include("Connection.php");/*incluye el archivo donde esta la coneccion 
 							esta se puede modificar en el archivo*/
 	function conectar()
 	{
@@ -20,7 +20,7 @@
          try {
 
          	$result = mysql_query($Paises); // ejecuta la consulta
-
+      
   			while ($fila = mysql_fetch_row($result)) {
            	echo "<option value = '".$fila['0']."'>".$fila['1']."</option>";
          	};
@@ -32,6 +32,25 @@
 	            
 	    }
 
+	}
+
+	function obtenerProvincia($idPais)
+	{
+
+	$resultado = false; // contendra el arreglo de las provincias
+
+ 	$connection = conectar();
+	$consulta= "call obtenerProvincia(".$idPais.")";
+    if($idPais != ''){
+    $consulta= "call obtenerProvincia(".$idPais.")";
+    }
+
+ 
+    $conexion = conectar();
+   	$result = mysql_query($consulta);
+    
+ 
+    return $result;
 	}
 
 

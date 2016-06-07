@@ -160,9 +160,7 @@
                                     <label>Provincia</label>
                                     <select name="provincia" id = "provincia" class="form-control">
                                         <option value="">Selecionar-Provincia</option>
-                                            <?php
-                                            
-                                            ?>
+                                        
                                     </select>
                                 </div>
                                 
