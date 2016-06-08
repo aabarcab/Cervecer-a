@@ -106,8 +106,47 @@ function buscarDistrito()
     }
 }
 
-function registrarPersonas(){
-  
+function registrarPersona()
+{
+    $nombre = $("#nombre").val();
+    $apellidoUno = $("#primerApellido").val();
+    $apellidoDos = $("#segundoApellido").val();
+    $cedula = $("#cedula").val();
+    $correo= $("#correo").val();
+    $foto = null;
+    $direccion = $("#direccion").val();
+    $id_distrito = $("#distrito").val();
+    $id_usuario = null;
+    //alert ($nombre + $apellidoUno + $apellidoDos + $cedula + $correo + $foto + $direccion + $id_distrito + $id_usuario);
+    if($nombre == "" ){
+        alert ("Por favor rellene todos los espacios");
+    }
+
+    else{ 
+        $.ajax({
+
+            dataType: "json",
+            data: {"nombre": $nombre, "apellidoUno":$apellidoUno,
+            "apellidoDos":$apellidoDos, "cedula":$cedula, "correo":$correo, "foto":$foto, 
+            "direccion":$direccion, "id_distrito":$id_distrito, "id_usuario": $id_usuario},
+            url:   'funcionesPHP/Registrar.php',
+            type:  'post',
+
+            beforeSend: function(){
+                //Lo que se hace antes de enviar el formulario
+            },
+            success: function(){
+                //lo que se si el destino devuelve algo
+                //var_dump(respuesta.html);
+              
+            },
+            error:    function(xhr,err){ 
+
+
+                alert("readyState: "+ xhr.readyState +"\nstatus: "+xhr.status+"\n \n responseText: "+ xhr.responseText);
+            }
+        });
+    }
 }
 
 

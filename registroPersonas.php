@@ -6,7 +6,7 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -114,41 +114,41 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                 <div class="checkbox">
-                                  <label><input type="checkbox" value="">Empleado</label>
+                                  <label><input type="checkbox" value="" >Empleado</label>
                                 </div>
                                 
                                 <div class="checkbox">
-                                  <label><input type="checkbox" value="">Comprador</label>
+                                  <label><input type="checkbox" value="" >Comprador</label>
                                 </div>
                                 
                                 <div class="form-group col-lg-4">
                                     <label>Nombre</label>
-                                    <input type="text" class="form-control">
+                                    <input name = "nombre" id = "nombre" type="text" required="required" class="form-control">
                                 </div>
                                 
                                 <div class="form-group col-lg-4">
                                     <label>Primer Apellido</label>
-                                    <input type="email" class="form-control">
+                                    <input name = "primerApellido" id = "primerApellido" required="required" type="text" class="form-control">
                                 </div>
                                 
                                 <div class="form-group col-lg-4">
                                     <label>Segundo Apellido</label>
-                                    <input type="tel" class="form-control">
+                                    <input name = "segundoApellido" required="required" id = "segundoApellido" type="text" class="form-control">
                                 </div>
                                 
                                  <div class="form-group col-lg-4">
                                     <label>Cédula</label>
-                                    <input type="tel" class="form-control">
+                                    <input name = "cedula"  required="required" id = "cedula" type="text" class="form-control">
                                 </div>
                                 
                                  <div class="form-group col-lg-4">
                                     <label>Correo</label>
-                                    <input type="tel" class="form-control">
+                                    <input name = "correo" required="required" id = "correo" type="email" class="form-control">
                                 </div>
                          
                                 <div class="form-group col-lg-4">
                                     <label>Pais</label>
-                                    <select class = "form-control" name="pais" id = "pais">
+                                    <select class = "form-control" onchange = "buscarProvincia()" name="pais" id = "pais">
                                         <option value= "" >Selecionar-País</option>
                                         <?php
                                            obtenerPaises();
@@ -158,35 +158,32 @@
                                 
                                 <div class="form-group col-lg-4">
                                     <label>Provincia</label>
-                                    <select name="provincia" id = "provincia" class="form-control">
+                                    <select  onchange = "buscarCanton()" name="provincia" id = "provincia" class="form-control">
                                         <option value="">Selecionar-Provincia</option>
-                                        
+
+                                   
                                     </select>
                                 </div>
                                 
                                 <div class="form-group col-lg-4">
                                     <label>Cantón</label>
-                                    <select name="canton" id = "canton" class="form-control">
+                                    <select onchange = "buscarDistrito()" name="canton" id = "canton" class="form-control">
                                         <option value="">Selecionar-Canton</option>
-                                            <?php
-                                             
-                                            ?>
+                                  		
                                     </select>
                                 </div>
 
                                 <div class="form-group col-lg-4">
                                     <label>Distrito</label>
-                                    <select name="distrito" id = "distrito" class="form-control">
+                                    <select name="distrito" id = "distrito" required="required" class="form-control">
                                         <option value="">Selecionar-Distrito</option>
-                                            <?php
-                                              
-                                            ?>
+                                          
                                     </select>
                                 </div>
                                 
                                  <div class="form-group col-lg-4">
                                     <label>Dirección exacta</label>
-                                    <input type="tel" class="form-control">
+                                    <input type="tel" name = "direccion" id = "direccion"  required="required"class="form-control">
                                 </div>
                                 
                                 <div class="form-group col-lg-4">
@@ -196,23 +193,24 @@
                                  
                                  <div class="form-group col-lg-4">
                                     <label>Pseudónimo (Comprador):</label>
-                                    <input type="tel" id="pseudonimo" class="form-control">
+                                    <input type="tel" id="pseudonimo" name = "pseudonimo" class="form-control">
                                 </div>
                                 
                                 <div class="form-group col-lg-4">
                                     <label>Fotografía</label>
                                     <span class="btn btn-default btn-file">
-                                        <input type="file">
+                                        <input id = "fotografia" name = "fotografia" type="file">
                                     </span>
                                 </div>
                                 
                                 <div class="clearfix"></div>
-                                
-                                <div class="form-group col-lg-12">
-                                    <input type="hidden" name="save" value="contact">
-                                    <button type="submit" class="btn btn-default">Registrar</button>
-                                </div>
-                                
+
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="hidden" name="save" id "save" value="contact">
+                                <button type="submit" class="btn btn-default" id = "btnRegistrar" name = "btnRegistrar" onclick= "registrarPersona()" >
+                                    Registrar
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -234,14 +232,8 @@
     </footer>
 
     <!-- jQuery -->
-  
-   <script src = "js/pais_provincia_canton_distrito.js"></script> 
-
-    <script>
-        $(document).ready(function(){
-             $('#pais').on('change',buscarProvincia);
-        });    
-    </script>
+    
+   <script src = "js/funcionesJavaScript.js"></script> 
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
