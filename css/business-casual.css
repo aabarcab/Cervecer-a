@@ -36,6 +36,11 @@ hr {
     border-color: #999999;
 }
 
+hl {
+    max-width: 1000px;
+    border-color: #999999;
+}
+
 
 .brand,
 .address-bar {

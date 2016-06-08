@@ -106,10 +106,6 @@ function buscarDistrito()
     }
 }
 
-function registrarPersonas(){
-  
-}
-
 
 function adios()
 {

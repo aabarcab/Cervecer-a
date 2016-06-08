@@ -60,6 +60,7 @@
                         <ul class="dropdown-menu">
                             <li><a href = "registroCervezas.html" >Cerveza</a></li>
                             <li><a href = "registroPersonas.html">Persona</a></li>
+                            <li><a href = "registroCompra.html">Compra</a></li>
                             <li><a href = "registroUsuarios.html">Usuarios</a></li>
                             <li><a href = "registroOtros.html">Otros</a></li>
                         </ul>
@@ -97,18 +98,18 @@
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">Registrar
-                        <strong>Familia</strong>
+                        <strong>Varios</strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <hr>
                         <h1 class="intro-text text-left"><strong>Ingrese el nombre de la familia</strong>
                         </h1>
-                        <hr>
                         <form role="form">
                             <div class="row">
+                                <div class="form-group">
+                                </div>
                                 <div class="form-group col-lg-4">
                                     <label>Nombre</label>
                                     <input type="text" class="form-control">
@@ -120,12 +121,44 @@
                                     <input type="hidden" name="save" value="contact">
                                     <button type="submit" class="btn btn-default">Guardar</button>
                                 </div>
+                                <div class="form-group col-lg-12"></div>
                             </div>
+                            <hr>
                         </form>
-                         <hr>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
+                        <h1 class="intro-text text-left"><strong>Ingrese el estilo de la cerveza</strong>
+                        </h1>
+                        <form role="form">
+                            <div class="row">
+                                <div class="form-group">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Pertenece a</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Familia
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                                
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                </div>
+                                <div class="form-group col-lg-12"></div>
+                            </div>
+                            <hr>
+                        </form>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
                         <h1 class="intro-text text-left"><strong>Registrar Gustos por Cliente</strong>
                         </h1>
-                        <hr>
                         <form role="form">
                             <div class="row">
                                <div class="form-group col-lg-4">
@@ -145,79 +178,160 @@
                                 <div class="form-group col-lg-12">
                                     <input type="hidden" name="save" value="contact">
                                     <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
                                 </div>
                             </div>
+                            <hr>
                         </form>
-                        
-                       
-                        <hr>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
                         <h1 class="intro-text text-left"><strong>Lugar</strong>
                         </h1>
-                        <hr>
-                        
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group col-lg-4">
-                                <label>País</label>
-                                <input type="text" class="form-control">
+                        <form role="form">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label>País</label>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
-                          <div class="form-group">
-                            <label class="control-label col-sm-2" for="Provincia">Provincia:</label>
-                            <div class="col-sm-10"> 
-                              <input type="" class="form-control" id="Provincia" placeholder="Ingrese provincia">
-                            </div>
-                          </div>
-                          <div class="form-group col-lg-4">
-                                    <label>Cerveza</label>
-                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Cerveza
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label>Provincia</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Pertenece a</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione País
                                     <span class="caret"></span></button>
                                     <ul class="dropdown-menu">
                                     </ul>
                                 </div>
-                          <div class="form-group">
-                            <label class="control-label col-sm-2" for="Cantón">Cantón:</label>
-                            <div class="col-sm-10"> 
-                              <input type="" class="form-control" id="Cantón" placeholder="Ingrese cantón">
                             </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-sm-2" for="Distrito">Distrito:</label>
-                            <div class="col-sm-10"> 
-                              <input type="" class="form-control" id="Distrito" placeholder="Ingrese cantón">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label>Cantón</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Pertenece a</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Provincia
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
                             </div>
-                          </div>
-                          <div class="form-group"> 
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-default">Guardar</button>
+                             <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label>Distrito</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Pertenece a</label>
+                                    <button class="btn form-control dropdown-toggle" type="button" data-toggle="dropdown">Seleccione Cantón
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    </ul>
+                                </div>
                             </div>
-                          </div>
+                            <div class ="row">
+                                <div class="form-group col-lg-4">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
+                                </div>
+                            </div>
+                            <hr>
                         </form>
-                        
-                        
-                        <hr>
-                        <h1 class="intro-text text-left"><strong>Nacionalidad</strong>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
+                        <h1 class="intro-text text-left"><strong>Registrar color de cerveza</strong>
                         </h1>
-                        <hr>
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="Nacionalidad">Dato a modificar:</label>
-                                              </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="Nacionalidad">Nacionalidad:</label>
-                            <div class="col-sm-10">
-                                <input type="" class="form-control" id="Nacionalidad" placeholder="Ingrese nacionalidad">
+                        <form role="form">
+                            <div class="row">
+                               <div class="form-group col-lg-4">
+                                    <label>Color</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
+                                </div>
                             </div>
-                          </div>
-                          
-                          <div class="form-group"> 
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-default">Guardar</button>
-                            </div>
-                          </div>
+                            <hr>
                         </form>
-                        
-                        
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
+                        <h1 class="intro-text text-left"><strong>Registrar fabricante de cerveza</strong>
+                        </h1>
+                        <form role="form">
+                            <div class="row">
+                               <div class="form-group col-lg-4">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
+                        <h1 class="intro-text text-left"><strong>Registrar tipo de fermentación</strong>
+                        </h1>
+                        <form role="form">
+                            <div class="row">
+                               <div class="form-group col-lg-4">
+                                    <label>Tipo</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
+                        <h1 class="intro-text text-left"><strong>Registrar cuerpo de cerveza</strong>
+                        </h1>
+                        <form role="form">
+                            <div class="row">
+                               <div class="form-group col-lg-4">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                        <div class="form-group col-lg-12"></div>
+                        <div class="form-group col-lg-12"></div>
+                        <h1 class="intro-text text-left"><strong>Registrar color de cerveza</strong>
+                        </h1>
+                        <form role="form">
+                            <div class="row">
+                               <div class="form-group col-lg-4">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Guardar</button>
+                                    <div class="form-group col-lg-12"></div>
+                                </div>
+                            </div>
+                        </form>
                 </div>
-                
         </div>
 
     </div>
