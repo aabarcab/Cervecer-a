@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarUsuario`(P_NEW_USER VARCHAR(45),
+															P_NEW_PASSWORD VARCHAR(45))
+
+	INSERT INTO USUARIO (idUsuario, USER, PASSWORD)
+	VALUES(null, P_NEW_USER, P_NEW_PASSWORD);

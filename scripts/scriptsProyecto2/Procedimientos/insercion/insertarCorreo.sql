@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertCorreo`(P_CORREO VARCHAR(45), P_ID_PERSONA INT(11))
+BEGIN
+	INSERT INTO CORREO (idCorreo, correo, id_persona)
+	VALUES (NULL, P_CORREO, P_ID_PERSONA);
+END
